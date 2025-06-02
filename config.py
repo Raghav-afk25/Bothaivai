@@ -30,7 +30,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-API_URL = getenv("API_BASE_URL", 'https://Deadlinetech.site') #youtube song url
+API_BASE_URL = getenv("API_BASE_URL", 'https://Deadlinetech.site') #youtube song url
 API_KEY = getenv("API_KEY", 'yXQQ2wvITutr7aaV3GSmiS1h') # youtube song api key, generate free key or buy paid plan from panel.thequickearn.xyz
 
 UPSTREAM_REPO = getenv(
