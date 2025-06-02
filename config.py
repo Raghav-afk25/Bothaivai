@@ -13,23 +13,16 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-#Get API_KEY from @DeadlineTechOwner or @DeadlineApiBot
-API_BASE_URL = getenv("API_BASE_URL", "http://deadlinetech.site")
-API_KEY = getenv("API_KEY")
-
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1500))
-
-# Set this to true if you want post ads automatically
-ADS_MODE = getenv("ADS_MODE", None)
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
-# Get this value from @Harry_RoxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6848223695))
+# Get this value from @MissRose_Bot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", None))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -37,25 +30,31 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
+API_URL = getenv("API_URL", 'https://Deadlinetech.site') #youtube song url
+API_KEY = getenv("API_KEY", 'yXQQ2wvITutr7aaV3GSmiS1h') # youtube song api key, generate free key or buy paid plan from panel.thequickearn.xyz
+
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/DeadlineTech/music",
+    "https://github.com/Raghav-afk25/Bothaivai",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DeadlineTechTeam")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DeadlineTechsupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DeadlineTechteam")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DeadlineTechsupport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+
+# make your bots privacy from telegra.ph and put your url here 
+PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-AviaxMusic-08-14")
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "6be9f0b34c384ad097cc71b1c1fc5e8b")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "2607415f99944cc6b24fa98018fb8c09")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
@@ -64,11 +63,11 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
 # Telegram audio and video file size limit (in bytes)
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 
-# Get your pyrogram v2 session from @StringFatherBot on Telegram
+# Get your pyrogram v2 session from Replit
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
